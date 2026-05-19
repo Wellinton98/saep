@@ -33,3 +33,16 @@ CREATE TABLE `movimentacao` (
   CONSTRAINT FK_produto_funcionario FOREIGN KEY (`funcionario`) REFERENCES `funcionario` (`id`)
 );
 
+insert into funcionario (nome, login, senha) values
+("Neymar jr", "neymar", "1234"),
+("endrik", "endrik", "12345"),
+("wevweton", "Wevweton", "123456"),
+("wellinton", "wellinton", "123");
+
+INSERT INTO produto (nome, descricao, categoria, estoque_minimo, quantidade) VALUES
+("Pão francês", "Pão francês fresquinho", "Pães", 50, 100),
+("Pão de queijo", "Pão de queijo quentinho", "Pães", 30, 60),
+("Bolo de chocolate", "Bolo de chocolate delicioso", "Bolos", 20, 40),
+("Croissant", "Croissant amanteigado", "Pães", 25, 50);
+
+INSERT INTO movimentacao
