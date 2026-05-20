@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <title>Login - Padoca do Saep</title>
+</head>
+<body>
+    <h1>Padoca Saep</h1>
+    <p th:if="${erro}" th:texto="${erro}" style="color: red;">Senha ou login incorretos.</p>
+    <form method="post" action="/login">
+        <label>Login:</label>
+        <input type="text" name="login">
+
+        <label >Senha</label>
+        <input type="password" name="Senha">
+
+        <button type="submit">Entrar</button>
+    </form>
+    
+</body>
+</html>
